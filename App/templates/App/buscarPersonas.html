@@ -1,0 +1,12 @@
+{% extends 'App/base.html' %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<form action="/App/buscarPersonasResultados/" method="GET">   
+<p>
+     Apellido: <input type="text" name="apellido" id="apellido"> 
+    <input type="submit" value="buscar">
+</p>
+</form>  
+{% endblock %}

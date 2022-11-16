@@ -1,0 +1,16 @@
+{% extends 'App/base.html' %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<p>Busco a : {{apellido}}</p>
+{% if personas %}
+<ul>
+    {% for persona in personas %}
+    <li> {{persona.nombre}} - {{persona.apellido}} - {{persona.email}} - {{persona.Nacimiento}} </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>no hay datos</p>
+{% endif %}
+
+{% endblock %}
